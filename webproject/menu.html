@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="icon"href="img.avif"type="image/avif">
+    <link rel="stylesheet" href="pr.css">
+
+</head>
+<body class="menu">
+    <header style="text-align: center; background-color: rgb(156, 156, 237);">
+        <h1>Καφετέρια Μάρμαρα</h1>
+        <hr>
+    </header><br>
+    <strong>
+    
+    <button style="font-size:25px; background-color: rgb(31, 141, 210);"><a href="pr.html">Αρχική </a></button>
+    <button style="font-size:25px; background-color: rgb(31, 141, 210);"><a href="menu.html">Μενού </a></button>
+    <button style="font-size:25px; background-color: rgb(31, 141, 210);"><a href="epikoinwnia.html">Επικοινωνία</a></button>
+    <br><br>
+    </strong>
+    <h2>Μενού Καφετέριας Μάρμαρα</h2><hr>
+
+    <strong><h3>Προϊόντα:</h3></strong>
+
+    <ul>
+        <ul>
+            <u><h4><strong>Καφέδες:</strong></h4></u>
+           
+ <main>
+    <div class="menu-section">
+
+      <ul>
+        <li>Καφές - 2€ <button onclick="addToCart('Καφές', 2)">Προσθήκη</button></li>
+        <li>Εσπρέσο - 2.5€ <button onclick="addToCart('Εσπρέσο', 2.5)">Προσθήκη</button></li>
+        <li>Καπουτσίνο - 3€ <button onclick="addToCart('Καπουτσίνο', 3)">Προσθήκη</button></li>
+        <li>Φρέντο - 3.5€ <button onclick="addToCart('Φρέντο', 3.5)">Προσθήκη</button></li>
+        <li>Λάτε - 3€ <button onclick="addToCart('Λάτε', 3)">Προσθήκη</button></li>
+        <li>Μοκατσίνο - 3.5€ <button onclick="addToCart('Μοκατσίνο', 3.5)">Προσθήκη</button></li>
+        <li>Νες καφέ - 2.5€ <button onclick="addToCart('Νες καφέ', 2.5)">Προσθήκη</button></li>
+        <li>Φίλτρου - 2€ <button onclick="addToCart('Φίλτρου', 2)">Προσθήκη</button></li>
+        <li>Freddo espresso - 3.5€ <button onclick="addToCart('Freddo espresso', 3.5)">Προσθήκη</button></li>
+        <li>Freddo cappuccino - 4€ <button onclick="addToCart('Freddo cappuccino', 4)">Προσθήκη</button></li>
+        <li>Ice latte - 4€ <button onclick="addToCart('Ice latte', 4)">Προσθήκη</button></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <u><h4><strong>Άλλα ροφήματα και σνακ</strong></h4></u>
+      <ul>
+        <li>Σοκολάτα ζεστή - 3€ <button onclick="addToCart('Σοκολάτα ζεστή', 3)">Προσθήκη</button></li>
+        <li>Σοκολάτα κρύα - 3.5€ <button onclick="addToCart('Σοκολάτα κρύα', 3.5)">Προσθήκη</button></li>
+        <li>Τσάι μαύρο - 1.5€ <button onclick="addToCart('Τσάι μαύρο', 1.5)">Προσθήκη</button></li>
+        <li>Τσάι πράσινο - 1.5€ <button onclick="addToCart('Τσάι πράσινο', 1.5)">Προσθήκη</button></li>
+        <li>Χυμός πορτοκάλι - 3€ <button onclick="addToCart('Χυμός πορτοκάλι', 3)">Προσθήκη</button></li>
+        <li>Σάντουιτς - 4€ <button onclick="addToCart('Σάντουιτς', 4)">Προσθήκη</button></li>
+        <li>Γλυκό του κουταλιού - 2.5€ <button onclick="addToCart('Γλυκό του κουταλιού', 2.5)">Προσθήκη</button></li>
+      </ul>
+    </div>
+
+    <div id="cart">
+      <h3>🛒 Το καλάθι μου</h3>
+      <ul id="cart-items"></ul>
+      <p id="total"></p>
+      <button onclick="checkout()">Ολοκλήρωση Παραγγελίας</button>
+      <button onclick="clearCart()">Άδειασμα Καλαθιού</button>
+      <div class="cart">
+      <p>Πλήθος στο καλάθι: <span id="counter">0</span></p>
+  </div>
+    </div>
+
+    <div id="payment">
+
+        <input type="radio" id="visabtn" name="payment">
+        <label for="visabtn">visa</label>
+        <input type="radio" id="masterbtn" name="payment">
+        <label for="masterbtn">mastercard</label>
+        <input type="radio" id="paypalbtn" name="payment">
+        <label for="paypalbtn">paypal</label>
+
+        <button type="submit" id="mysubmit">Πληρωμή</button>
+
+        <p id="payresult"></p>
+
+    </div>
+
+<p id="clock"></p>
+
+  </main>
+
+<footer style="text-align: center; background-color: rgb(156, 156, 237);">
+        <hr>
+        author: mylonas <br>
+        <small><a href="mailto: leuteristhomas@gmail.com">leuteristhomas@gmail.com</a></small>
+        <p>Copyright © 2025 Καφετέρια Μάρμαρα</p>
+    </footer>
+    
+  <script src="pr.js"></script>
+</body>
+</html>

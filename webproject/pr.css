@@ -1,0 +1,59 @@
+ body.menu {
+      font-family: Arial, sans-serif;
+      background-color:  rgb(178, 173, 173);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      box shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    
+    }
+    header {
+      background-color: rgb(156,156,250);
+      padding: 15px;
+    }
+    button {
+      background-color: #020c42;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    button:hover {
+      background-color: #3f54d1;
+    }
+    .menu-section {
+      margin: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    #cart {
+      background-color: #dcabab;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      width: 60%;
+      box-shadow: 0 15px 30px rgba(59, 6, 251, 0.1);
+    }
+
+    body.pr {
+      font-family: Arial, sans-serif;
+      background-color: rgb(178, 173, 173);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    body.epikoinwnia {
+      font-family: Arial, sans-serif;
+      background-color:  rgb(178, 173, 173);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
