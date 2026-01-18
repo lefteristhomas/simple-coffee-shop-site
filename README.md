@@ -1,2 +1,7 @@
 # simple-coffee-shop-site
-This project is a simple website for a coffee shop. Includes Home, Menu and Contact pages. Visitors can view information about the business, such as shop details, product and price list. The site features an order system with shopping cart allowing users to select products, choose a payment method and submit their order directly to the shop's email
+
+Description:
+
+This project is a simple website for a coffee shop featuring a Home page, Menu page, and Contact page. The site displays information about the business, including store details, contact information, and a full product price list. It also includes an ordering feature, allowing users to select items and send their order, which is then delivered to the store’s email address.
+
+The website includes essential buttons for basic user interactions (e.g., navigation and ordering), and is built using HTML for the structure, CSS for styling, and JavaScript for dynamic functionality.
